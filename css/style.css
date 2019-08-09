@@ -4,8 +4,9 @@
     font-weight: normal;
     font-style: normal;
 }
-@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap');
-
+:root{
+    --primary-color: rgb(255, 168, 3);
+}
 *{
     padding: 0;
     margin: 0;
@@ -20,6 +21,10 @@ a{
 }
 li{
     list-style: none;
+}
+.pry-color{ color:var(--primary-color);}
+.links{
+    color: blue;
 }
 #showcase{
     background: url(../img/background-10.jpeg) no-repeat center center/cover;
@@ -51,7 +56,7 @@ li{
 #top-bar{
     height: 5rem;
     width: 100vw;
-    background-color: #faa71a;
+    background-color: rgb(255, 168, 3);
     background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
     display: flex;
     align-items: center;
@@ -86,24 +91,49 @@ li{
 }
 /* home page */
 #home{
-    background-color: blue;
+    background-color: rgb(255, 255, 255);
+    background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-dark.png");
     height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-#home div:nth-child(1){
-    font-size: 1rem;
+#home div h1{
+    font-size: 1.5rem;
+    color: #ffff;
     text-align: center;
-}
-#home div h1 span:nth-child(1){
-    display: block;
+    font-family: 'Slabo 27px', serif;
+    
 }
 #home div h1 span:nth-child(2){
-    font-size: 4rem;
-    font-family: 'Libre Baskerville', serif;
+    display: block;
+    font-family: 'Slabo 27px', serif;
+    color: #ffff;
 }
-#home h1 span:last-child{
+#home img{
+    width: 20rem;
+}
+/* Our ingredients */
+#ingredient{
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+}
+#ingredient .ingredient-img{
+    background: url(../img/ingredient-1.jpg) no-repeat center center/cover;
+    width:50vw;
+}
+#ingredient .ingredient-text{
+    width:50vw;
+    background-color: #ffff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem 10rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgb(36, 36, 36)
+}
 
-}
