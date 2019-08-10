@@ -21,13 +21,17 @@ a{
 }
 li{
     list-style: none;
+    
+}
+a:hover {
+    color: var(--primary-color) !important;
 }
 .pry-color{ color:var(--primary-color);}
 .links{
     color: blue;
 }
 #showcase{
-    background: url(../img/background-10.jpeg) no-repeat center center/cover;
+    background: url(../img/background-10.jpeg) no-repeat fixed center/cover;
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -35,6 +39,7 @@ li{
     justify-content: center;
     z-index: -9;
     position: relative;
+    
 }
 #showcase::after{
     content: '';
@@ -48,7 +53,7 @@ li{
 #showcase img{
     height: 20rem;
     opacity: 0.9;
-    /* position: fixed; */
+    position: fixed;
     z-index: 1;
 }
 
@@ -121,7 +126,7 @@ li{
     display: flex;
 }
 #ingredient .ingredient-img{
-    background: url(../img/ingredient-1.jpg) no-repeat center center/cover;
+    background: url(../img/ingredient-1.jpg) no-repeat center right/cover;
     width:50vw;
 }
 #ingredient .ingredient-text{
@@ -131,9 +136,136 @@ li{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 1rem 10rem;
+    padding: 1rem 5rem;
     font-size: 1.2rem;
     font-weight: 600;
     color: rgb(36, 36, 36)
 }
+/* Contact-form */
 
+#contact-form{
+    background: url(../img/dust.png);
+    width: 100vw;
+    height: 100%;
+}
+#contact-form h1{
+    font-size: 3.6rem;
+    text-align: center;
+    color: var(--primary-color);
+    padding-top: 5rem;
+}
+#contact-form > p{
+    font-size: 1.3rem;
+    text-align: center;
+    line-height: 30px;
+}
+#contact-form .form-main{
+    width: 50vw;
+    margin: 0 auto;
+}
+#contact-form .form-main div{
+    margin: 1rem 0;
+}
+#contact-form .form-main div input, #contact-form .form-main div textarea{
+    font-size: 1.3rem;
+    color: black;
+    width: 50vw;
+    border: none;
+    height: 3rem;
+    margin: -4px 0;
+    padding: 0.7rem;
+}
+#contact-form .form-main div textarea{
+    height: 10rem;
+}
+#contact-form .form-main div:last-child input{
+    height: 60px;
+    cursor: pointer;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+#contact-form .form-main div:last-child input{
+    height: 60px;
+    cursor: pointer;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transition: color 1s ease-out;
+    -webkit-transition: color 1s ease-out;
+    -moz-transition: color 1s ease-out;
+    -ms-transition: color 1s ease-out;
+    -o-transition: color 1s ease-out;
+}
+#contact-form .form-main div:last-child input:hover{
+    color: var(--primary-color)
+}
+
+/* footer */
+#footer{
+    background: url(../img/cupcake-1.jpeg) no-repeat center bottom/cover;
+    display: flex;
+    width: 100vw;
+    height: 25rem;
+    padding: 3rem 5vw;
+}
+#footer .site-links {
+    width: 33vw;
+    text-align: center;
+}
+#footer .footer-logo{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33vw;
+}
+#footer .footer-logo img{
+    width: 15rem;
+}
+#footer .footer-logo p{
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-align: center;
+}
+#footer .mailing-list{
+    width: 33vw;
+}
+#footer .mailing-list h1{
+    font-size: 1.5rem;
+    width: 21rem;
+    text-align: end;
+}
+#footer .mailing-list p{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    width: 21rem;
+    text-align: end;
+}
+#footer .mailing-list input:nth-child(3) {
+    width: 15rem;
+    border: solid 1px  var(--primary-color);
+    padding: 5px;
+    margin: 0;
+}
+#footer .mailing-list input:nth-child(4) {
+    width: 100px;
+    height: 35px;
+    border: solid 1px  var(--primary-color);
+    background-color: var(--primary-color);
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 10%;
+    cursor: pointer;
+    line-height: 35px;
+    -webkit-border-radius: 10%;
+    -moz-border-radius: 10%;
+    -ms-border-radius: 10%;
+    -o-border-radius: 10%;
+}
+#footer .mailing-list .socialmedia a{
+    margin-top:100px; 
+}
