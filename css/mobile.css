@@ -1,9 +1,15 @@
+#home{
+    background: url(../img/img8.jpg) no-repeat center top/cover;
+}
 #contact-form h1{
-        font-size: 3rem;
+        font-size: 2.7rem;
     }
 
 #contact-form > p{
-        font-size: 1rem;
+        font-size: 0.8rem;
+    }
+#contact-form .form-main div input, #contact-form .form-main div textarea{
+        font-size: 0.9rem;
     }
 #gallery{
     grid-template-rows: repeat(auto-fill, 15rem);
@@ -17,9 +23,6 @@
     width: 15rem;
     height: 15rem;
 }
-#contact-form .form-main div input, #contact-form .form-main div textarea{
-        font-size: 1rem;
-    }
 
 #footer .mailing-list .subscribe input:nth-child(1){
         width: 150px;
@@ -45,7 +48,12 @@
         width: 70vw
     }
 @media screen and (max-width: 700px) {
-    
+    #home{
+        background: url(../img/img4.jpg) no-repeat center center/cover
+    }
+    #showcase img{
+        height: 10rem;
+    }
     #top-bar{
         flex-direction: column !important;
         height: 100%;
@@ -53,7 +61,33 @@
     #top-bar .socialmedia a{
         display: none;
     }
+    #home p{
+        font-size: 0.7rem;
+        
+    }
+    #home img{
+        width: 10rem;
+        padding-bottom: 2rem;
+    }
     
+    #believe img{
+        width: 6rem;
+    }
+    #believe .pry-color{
+        font-size: 1rem;
+    }
+    #believe p{
+        font-size: 0.8rem;
+    }
+    
+    .whatwedo{
+        font-size: 0.8rem;
+    }
+
+    .howwedo{
+        font-size: 0.8rem;
+    }
+
     #gallery{
         grid-template-rows: repeat(auto-fill, 9rem);
         grid-template-columns: repeat(auto-fill, 9rem);
@@ -100,7 +134,7 @@
         
     }
     #footer .mailing-list p{
-        margin: 0 auto !important;
+        margin: 10px auto !important;
         text-align: center !important;
         font-size: 0.9;
         max-width: 100vw !important;

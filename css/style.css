@@ -26,11 +26,12 @@ li{
 }
 a:hover {
     color: var(--primary-color) !important;
+    cursor: pointer;
 }
 i:hover {
     color: var(--primary-color) !important;
 }
-.pry-color{ color:var(--primary-color);}
+.pry-color{ color:var(--primary-color) !important;}
 .links{
     color: blue;
 }
@@ -80,7 +81,7 @@ i:hover {
     position: -ms-sticky;
     position: -o-sticky;
     top: 0;
-    z-index: 1;
+    z-index: 3;
     overflow: hidden;
     overflow: -moz-hidden-unscrollable;
 }
@@ -108,58 +109,122 @@ i:hover {
 }
 /* home page */
 #home{
-    background-color: rgb(255, 255, 255);
-    background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-dark.png");
+    background: url(../img/img22.jpeg) no-repeat center center/cover;
     height: 100vh;
+    max-width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     overflow: hidden;
     overflow: -moz-hidden-unscrollable;
+    position: relative;
+    z-index: 0;
 }
-#home div h1{
-    font-size: 1.5rem;
-    color: #ffff;
+#home:after{
+    content: '';
+    background: rgba(0, 0, 0, 0.445);
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 0;
+}
+#home p{
+    color: var(--primary-color);
+    font-size: 1.3rem;
     text-align: center;
-    font-family: 'Slabo 27px', serif;
+    font-weight: bold;
+    z-index: 1;
     
-}
-#home div h1 span:nth-child(2){
-    display: block;
-    font-family: 'Slabo 27px', serif;
-    color: #ffff;
 }
 #home img{
     width: 20rem;
+    padding-bottom: 2rem;
+    z-index: 1;
+}
+/* About */
+#believe{
+    background: url(../img/dust1.png);
+    max-width: 100vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+#believe img{
+    width: 10rem;
+}
+#believe .pry-color{
+    font-size: 1.5rem;
+    margin: 1rem auto;
+}
+#believe p{
+    max-width:40rem;
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 1.8rem;
 }
 /* Our ingredients */
-#ingredient{
-    max-width: 100vw;
-    height: 60vh;
-    display: flex;
-    overflow: hidden;
-    overflow: -moz-hidden-unscrollable;
-}
-#ingredient .ingredient-img{
-    background: url(../img/ingredient-1.jpg) no-repeat center right/cover;
-    width:50vw;
-}
-#ingredient .ingredient-text{
-    width:50vw;
-    background-color: #ffff;
+.whatwedo{
+    max-width:100vw;
+    height: 57vw;
+    background: url(../img/img51.JPG) no-repeat center bottom/cover;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 1rem 5rem;
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: rgb(36, 36, 36)
+    align-items: center;
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: rgb(36, 36, 36);
+    overflow: hidden;
+    position: relative;
+}
+.whatwedo::after{
+    content: '';
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.705);
+    width: 100vw;
+    height: 65vw;
+}
+.whatwedo p, .whatwedo h1{
+    max-width: 50rem;
+    z-index: 1;
+    color: var(--primary-color);
+}
+.howwedo{
+    max-width:100vw;
+    height: 50vw;
+    background: url(../img/ingredient-1.jpg) no-repeat center center/cover;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: rgb(36, 36, 36);
+    overflow: hidden;
+    position: relative;
+}
+.howwedo::after{
+    content: '';
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.39);
+    width: 100vw;
+    height: 65vw;
+}
+.howwedo p, .howwedo h1{
+    max-width: 50rem;
+    z-index: 1;
+    color: var(--primary-color);
 }
 /* gallery */
 #images{
-    background: url(../img/dust.png);
+    background: url(../img/dust1.png);
     overflow: hidden;
 }
 #images a{
@@ -167,7 +232,7 @@ i:hover {
     text-align: center;
 }
 #gallery{
-    background: url(../img/dust.png);
+    background: url(../img/dust1.png);
     display: grid;
     justify-content: center;
     align-items: center;
@@ -204,7 +269,7 @@ i:hover {
 }
 /* Contact-form */
 #contact-form{
-    background: url(../img/dust.png);
+    background: url(../img/dust1.png);
     width: 100vw;
     height: 100%;
 }
@@ -213,6 +278,11 @@ i:hover {
     text-align: center;
     color: var(--primary-color);
     padding-top: 5rem;
+}
+#contact-form > div:nth-child(2){
+    width: 100vw;
+    display: flex;
+    justify-content: center
 }
 #contact-form > p{
     font-size: 1.3rem;
