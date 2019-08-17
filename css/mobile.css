@@ -1,6 +1,4 @@
-#home{
-    background: url(../img/img8.jpg) no-repeat center top/cover;
-}
+
 #contact-form h1{
         font-size: 2.7rem;
     }
@@ -48,9 +46,7 @@
         width: 70vw
     }
 @media screen and (max-width: 700px) {
-    #home{
-        background: url(../img/img4.jpg) no-repeat center center/cover
-    }
+  
     #showcase img{
         height: 10rem;
     }
@@ -60,14 +56,6 @@
     }
     #top-bar .socialmedia a{
         display: none;
-    }
-    #home p{
-        font-size: 0.7rem;
-        
-    }
-    #home img{
-        width: 10rem;
-        padding-bottom: 2rem;
     }
     
     #believe img{
